@@ -6,18 +6,18 @@ class SalaryTest {
 
 	@Test
 	public void testCal() {
-		Salary s= new Salary(10000.0);
-		s.calNetsalary();
-		assertEquals(18300.0, s.getGs());
-		assertEquals(5490.0, s.getIncomeTax());
-		assertEquals(12810.0, s.getNetSalary());
+		Salary sal= new Salary(10000.0);
+		sal.calNetsalary();
+		assertEquals(18300.0, sal.getGs());
+		assertEquals(5490.0, sal.getIncomeTax());
+		assertEquals(12810.0, sal.getNetSalary());
 		
 	}
 	
 	@Test
 	public void testSetBs() {
-		Salary s= new Salary(10000.0);
-		s.setBasicSalary(12000.0);
-		assertEquals(12000.0, s.getBasicSalary());
+		Salary sal= new Salary(10000.0);
+		sal.setBasicSalary(12000.0);
+		assertEquals(12000.0, sal.getBasicSalary());
 	}
 }
